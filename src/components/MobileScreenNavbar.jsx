@@ -57,7 +57,8 @@ const MobileScreenNavbar = () => {
         <div className="search--bar--container">
           <img src={searchIcon} alt="search" />
           <input className="search--bar" type="text" placeholder="cappuccino" />
-          <span style={{ cursor: "pointer" , fontSize:'20px' }} onClick={toggleSearch}>
+          <span style={{ cursor: "pointer" , fontSize:'25px',
+        fontWeight:'500' }} onClick={toggleSearch}>
             x
           </span>
         </div>

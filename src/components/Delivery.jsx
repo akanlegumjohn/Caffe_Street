@@ -8,7 +8,7 @@ const Delivery = () => {
         How to use delivery <span className="underline">service</span>
       </h2>
       <div className="delivery--container--items">
-        <div className="delivery--item">
+        <div className="delivery--item first--child">
           <div>
             <img
               className="delivery--first--image"
@@ -16,7 +16,7 @@ const Delivery = () => {
               alt="cup"
             />
           </div>
-          <h3 className="delivery--items--h3">choose your coffee</h3>
+          <h3 className="delivery--items--h3 ">choose your coffee</h3>
           <h4 className="delivery--items--h4">there are 20+ coffee for you</h4>
         </div>
         <div>

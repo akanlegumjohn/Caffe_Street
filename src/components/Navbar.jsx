@@ -36,14 +36,14 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <div>
+      <div className="nav--end">
         <div className="search--bar--container">
           <img src={searchIcon} alt="search" />
-          <input className="search--bar" type="text" placeholder="cappuccino" />
+          <input type="text" placeholder="cappuccino" />
         </div>
         <div className="nav--cart">
-          <span className="eclipse"></span>
           <img src={cartIcon} alt="" />
+          <span className="eclipse"></span>
         </div>
       </div>
     </nav>

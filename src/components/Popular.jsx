@@ -5,13 +5,19 @@ import image3 from "../assets/img_product_3.png";
 
 const Popular = () => {
   return (
-    <div className="popular--now--container">
-      <div className="popular--now--items">
-        <Card image={image1} name={"Vanilla Latte"} price={"21K"} />
-        <Card image={image2} name={"Espresso"} price={"12K"} />
-        <Card image={image3} name={"Hazelnut Latte"} price={"23K"} />
+    <section className="popular--now--container">
+      <div className="popular--now--items--container">
+        {" "}
+        <div className="popular--text">
+          Popular <span className="underline">Now</span>{" "}
+        </div>
+        <div className="popular--now--items">
+          <Card image={image1} name={"Vanilla Latte"} price={"21K"} />
+          <Card image={image2} name={"Espresso"} price={"12K"} />
+          <Card image={image3} name={"Hazelnut Latte"} price={"23K"} />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

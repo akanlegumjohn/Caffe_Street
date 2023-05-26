@@ -1,5 +1,4 @@
 import Hero from "./Hero";
-import bgHeroImage from "../assets/bg_img_hero.png";
 import Popular from "./Popular";
 import Delivery from "./Delivery";
 import About from "./About";
@@ -7,8 +6,8 @@ import SpecialMenu from "./SpecialMenu";
 import Testimonial from "./Testimonial";
 import Newsletter from "./Newsletter";
 import WindowWidthComponent from "./WindowWidth";
-import CardSlider from "./CardSlider";
 import { useEffect, useState } from "react";
+import MobileCardSlider from "./MobileCardSlider";
 
 const Home = () => {
    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,9 +25,8 @@ const Home = () => {
   return (
     < >
       <Hero />
-      <img className="hero--bg--image" src={bgHeroImage} alt="heroImage" />
      <div className="main">
-       { windowWidth >= 900?<Popular />:<CardSlider />}
+       { windowWidth >= 900?<Popular />: <MobileCardSlider/>}
       <Delivery />
       <About />
       <SpecialMenu />
@@ -36,6 +34,7 @@ const Home = () => {
       <Newsletter />
      </div>
       <WindowWidthComponent/>
+     
     </>
   );
 };
