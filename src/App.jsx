@@ -23,12 +23,12 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      <>{windowWidth > 960 ? <Navbar /> : <MobileScreenNavbar />}</>
+      <>{windowWidth > 1000 ? <Navbar /> : <MobileScreenNavbar />}</>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
-          path="/product"
+          path="/"
           element={
             <div>
               <h1>Welcome to our product page</h1>
@@ -36,7 +36,7 @@ function App() {
           }
         />
         <Route
-          path="/delivery"
+          path="/"
           element={
             <div>
               <h1>You are safe with us to deliver your amazing coffee</h1>

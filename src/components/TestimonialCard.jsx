@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 const TestimonialCard = ({ image, name, message }) => {
   return (
-    <div className="testimonial--card--container">
+    <div className="testimonial--details--card--container">
       <img
         className="testimonial--card--image"
         src={image}
