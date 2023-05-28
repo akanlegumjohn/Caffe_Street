@@ -1,5 +1,11 @@
 
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
 :root {
   --hero-bg-color: #f7ebda;
   --primary-color: #ff902a;
@@ -126,7 +132,7 @@ nav {
   justify-content: space-between;
   height: auto;
   position: relative;
-  padding: 0px 100px 300px 50px;
+  padding: 20px 100px 300px 150px;
 }
 .first--hero--section {
   display: flex;
@@ -230,27 +236,27 @@ nav {
 
 .second--hero--section .coffee--name {
   filter: drop-shadow(-2px 19px 32px rgba(48, 45, 38, 0.19));
-  width: 330px;
+  width: 280px;
   right: 390px;
-  top: 95px;
+  top: 115px;
   color: var(--secondary-color);
 }
 .second--hero--section .price {
-  width: 175px;
-  right: 460px;
-  top: 363px;
+  width: 155px;
+  right: 490px;
+  top: 361px;
   filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
 }
 
 .second--hero--section .rating {
-  width: 193.48px;
-  right: 63px;
-  top: 148px;
+  width: 183.48px;
+  right: 73px;
+  top: 168px;
 }
 .second--hero--section .rating img {
   width: 24px;
   height: 24px;
-  margin-bottom: 7px;
+  margin-left: 4px;
   animation: rotate 2s infinite linear;
 }
 @keyframes rotate {
@@ -267,7 +273,7 @@ nav {
 .hero--bottom--bg--image {
   position: absolute;
   bottom: -30px;
-  left: 0px;
+  left: 40px;
 }
 
 /* POPULAR NOW  */
@@ -280,9 +286,9 @@ nav {
   background: #f9d9aa;
   border-radius: 64px;
   height: 367px;
-  left: 1%;
+  left: 4%;
   top: -80px;
-  width: 87%;
+  width: 90%;
 }
 .popular--now--items--container {
   display: flex;
@@ -292,7 +298,6 @@ nav {
   gap: 20px;
   position: absolute;
   z-index: 3;
-  left: 3%;
   top: -50%;
 }
 .popular--text {
@@ -306,7 +311,7 @@ nav {
 .popular--now--items {
   display: flex;
   align-items: center;
-  gap: 5%;
+  gap: 2%;
 }
 
 .card--container {
@@ -398,16 +403,19 @@ nav {
 .delivery--container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  padding-left: 50px;
 }
 .delivery--container h2 {
-  align-self: flex-start;
+  align-self: center;
 }
 .delivery--container--items {
   display: flex;
-  padding-left: 50px;
-  gap: 10%;
+  gap: 200px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
 }
 
 .delivery--item {
@@ -438,17 +446,17 @@ nav {
   background-image: url("../src/assets/bg-image.png");
   display: flex;
   align-items: center;
+  justify-content: space-around;
   height: auto;
   position: relative;
-  gap: 600px;
-  margin: 300px 20px 0 0;
+  margin-top: 300px;
+    padding-bottom: 30px;
+
 }
 
 .about--image {
   filter: drop-shadow(0px 6px 16px rgba(8, 8, 8, 0.16));
-  position: absolute;
-  left: 50px;
-  bottom: 18%;
+  margin-top:-100px ;
 }
 
 .about--text {
@@ -466,7 +474,6 @@ nav {
   gap: 10px;
   width: 40%;
   height: auto;
-  margin: 3% 0% 3% 0%;
 }
 .about--info h3,
 h4 {
@@ -502,18 +509,17 @@ h4 {
 .special--menu--container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  padding: 40px 50px;
+  justify-content: center;
   gap: 20px;
+  margin: 50px 0;
 }
 .special--menu--container h2 {
-  font-size: 40px;
+align-self: center;
 }
 
 .special--menu--items {
   display: grid;
-  align-self: flex-start;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
   padding-left: 50px;
@@ -533,9 +539,10 @@ h4 {
   width: 80%;
   height: auto;
   display: flex;
-  gap: 10px;
+  gap: 40px;
   align-items: center;
-  padding-bottom: 5%;
+  justify-content: center;
+  padding: 5% 0;
   border-radius: 0 20px 20px 0;
   background-position: center;
   background-size: cover;
@@ -545,7 +552,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 .testimonial--heading {
   font-weight: 600;
@@ -565,8 +572,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5% -15% 0 3%;
   gap: 60px;
+  margin-right: -200px;
 }
 .testimonial--details--card--container {
   position: relative;
@@ -679,6 +686,9 @@ h4 {
   .hero--top--bg--image {
     top: -245px;
   }
+  .hero {
+  padding: 20px 100px 300px 50px;
+}
   .popular--now--container .card--container {
     width: 300px;
     height: 335px;
@@ -726,7 +736,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .navbar {
     background-color: #f5f5f5;
     position: fixed;
@@ -774,7 +784,13 @@ h4 {
   .nav--cart {
     right: 5%;
   }
-
+.rating,
+  .price,
+  .coffee--name,
+  .hero--main--image,
+  .second--hero--section .coffee--name {
+    display: none;
+  }
   .hero {
     padding: 100px 0px 300px 70px;
   }
@@ -791,9 +807,7 @@ h4 {
     right: 0px;
     top: 198px;
   }
-  .about--container {
-    gap: 500px;
-  }
+  
 }
 
 /* TABLET MODE  */
@@ -802,13 +816,7 @@ h4 {
   .hero {
     padding: 100px 0px 400px 70px;
   }
-  .rating,
-  .price,
-  .coffee--name,
-  .hero--main--image,
-  .second--hero--section .coffee--name {
-    display: none;
-  }
+  
   .hero--top--bg--image {
     right: -60%;
     top: -275px;
@@ -836,16 +844,7 @@ h4 {
     letter-spacing: 0.04em;
   }
 
-  .coffee--state--selected,
-  .coffee--state--btn {
-    border-radius: 8px;
-    width: 64px;
-    height: 32px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-  }
+  
   .slider--container .popular--text {
     position: absolute;
     left: 15%;
@@ -870,8 +869,16 @@ h4 {
     }
   }
 
+  .popular--now--items .product--info{
+    
+    padding: 0 20px;
+  
+  }
   .delivery--container .popular--text {
     margin-top: -150px;
+  }
+   .delivery--container{
+    margin: 150px 0;
   }
   .delivery--container--items {
     flex-direction: column;
@@ -977,6 +984,15 @@ h4 {
   .subscription--text {
     text-align: center;
     padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .carousel{
+    margin-left: 250px;
+  }
+  .slider--container .popular--text{
+    margin-top: -240px;
+    margin-left: 140px;
   }
 }
 @media screen and (max-width: 780px) {
