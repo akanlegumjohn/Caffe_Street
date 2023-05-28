@@ -5,7 +5,7 @@ import About from "./About";
 import SpecialMenu from "./SpecialMenu";
 import Testimonial from "./Testimonial";
 import Newsletter from "./Newsletter";
-// import WindowWidthComponent from "./WindowWidth";
+import WindowWidthComponent from "./WindowWidth";
 import { useEffect, useState } from "react";
 import MobileCardSlider from "./MobileCardSlider";
 
@@ -33,7 +33,7 @@ const Home = () => {
         <Testimonial />
         <Newsletter />
       </div>
-      {/* <WindowWidthComponent/> */}
+      <WindowWidthComponent/>
     </>
   );
 };
