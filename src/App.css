@@ -999,7 +999,13 @@ align-self: center;
   .hero--top--bg--image{
     display: none;
   }
-
+  .carousel{
+    margin-left: 0px;
+  }
+ .slider--container .popular--text{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
 
 /* SMALLER DEVICES */
