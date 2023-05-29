@@ -14,12 +14,12 @@ function MobileCardSlider() {
       </div>
       <Carousel
         nextIcon={
-          <IconContext.Provider value={{ color: "black", size: "5rem" }}>
+          <IconContext.Provider value={{ color: "black", size: "3rem" }}>
             <BsChevronRight />
           </IconContext.Provider>
         }
         prevIcon={
-          <IconContext.Provider value={{ color: "black", size: "5rem" }}>
+          <IconContext.Provider value={{ color: "black", size: "3rem" }}>
             <BsChevronLeft />
           </IconContext.Provider>
         }

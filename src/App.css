@@ -711,7 +711,7 @@ align-self: center;
     gap: 12px;
     padding: 7px 30px;
   }
-  .popular--now--container .coffee--state--selected,
+  /* .popular--now--container .coffee--state--selected,
   .coffee--state--btn {
     border-radius: 7px;
     width: 44px;
@@ -719,7 +719,7 @@ align-self: center;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.02em;
-  }
+  } */
 
   .testimonial--container {
     flex-direction: column;
@@ -889,7 +889,6 @@ align-self: center;
     position: relative;
     bottom: 140px;
     object-fit: contain;
-    min-width: 100%;
   }
   .about--container {
     flex-direction: column;
@@ -1108,6 +1107,11 @@ align-self: center;
   .slider--container .popular--text{
   margin-top: -260px;
   }
+   .about--image{
+    width: 80%;
+    left: 30px;
+
+  }
  .testimonial--heading{
   line-height: 36px;
  }
@@ -1140,4 +1144,5 @@ align-self: center;
   .testimonial--container h3 {
     font-size: 20px;
   }
+ 
 }
