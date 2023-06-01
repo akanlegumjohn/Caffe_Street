@@ -845,18 +845,16 @@ align-self: center;
   }
 
   
-  .slider--container .popular--text {
-    position: absolute;
-    left: 15%;
-    top: 76%;
-  }
+  
 
-  .carousel {
+  .slider--container {
     position: relative;
-    top: -247px;
+    top: -280px;
     z-index: 3;
   }
-
+.slider--container .popular--text {
+    padding:0 0 30px 120px;
+  }
   @keyframes breathing {
     0% {
       color: var(--primary-color); /* Initial color */
@@ -874,11 +872,9 @@ align-self: center;
     padding: 0 20px;
   
   }
-  .delivery--container .popular--text {
-    margin-top: -150px;
-  }
+  
    .delivery--container{
-    margin: 150px 0;
+    margin:  0;
   }
   .delivery--container--items {
     flex-direction: column;
@@ -989,10 +985,7 @@ align-self: center;
   .carousel{
     margin-left: 250px;
   }
-  .slider--container .popular--text{
-    margin-top: -240px;
-    margin-left: 140px;
-  }
+  
 }
 @media screen and (max-width: 780px) {
   .hero--top--bg--image{
@@ -1001,9 +994,7 @@ align-self: center;
   .carousel{
     margin-left: 0px;
   }
- .slider--container .popular--text{
-    margin-left: 0px;
-  }
+
 }
 
 /* SMALLER DEVICES */
@@ -1022,10 +1013,7 @@ align-self: center;
   .testimonial--container h3 {
     font-size: 25px;
   }
-  .popular--now--container .popular--text {
-    margin-top: 0px;
-    text-align: center;
-  }
+ 
   .first--hero--section {
     padding-right: 10px;
   }
@@ -1104,9 +1092,7 @@ align-self: center;
  .more--menu {
   font-size: 15px;
 }
-  .slider--container .popular--text{
-  margin-top: -260px;
-  }
+ 
    .about--image{
     width: 80%;
     left: 30px;
@@ -1135,9 +1121,7 @@ align-self: center;
   }
 }
 @media screen and (max-width: 375px) {
-  .slider--container .popular--text{
-  margin-top: -100px;
-  }
+ 
   .special--menu--container h2,
   .delivery--container h2,
   .popular--text,
